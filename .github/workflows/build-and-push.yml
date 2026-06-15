@@ -32,8 +32,3 @@ jobs:
       - name: Push Oracle 19c Image
         run: |
           docker push docker.io/pulsarsitra/oracle19c:8-slim
-
-
-      - name: Push PostgreSQL 16 Image
-        run: |
-          docker push docker.io/pulsarsitra/postgres16:el8
