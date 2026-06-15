@@ -1,0 +1,6 @@
+# Ignore large binary files
+*.zip
+*.tar.gz
+
+# Ignore local system generated folders
+.gemini/
