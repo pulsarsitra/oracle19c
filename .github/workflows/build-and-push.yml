@@ -33,22 +33,6 @@ jobs:
         run: |
           docker push docker.io/pulsarsitra/oracle19c:8-slim
 
-  build-postgres:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Build PostgreSQL 16 Image
-        run: |
-          cd postgres16
-          docker build -t docker.io/pulsarsitra/postgres16:el8 .
 
       - name: Push PostgreSQL 16 Image
         run: |
