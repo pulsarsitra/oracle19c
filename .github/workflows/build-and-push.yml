@@ -15,7 +15,7 @@ jobs:
 
       - name: Download Oracle 19c Binary
         run: |
-          curl -L -o LINUX.X64_193000_db_home.zip "https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip?AuthParam=1781514718_e34ac6d4dc773968e740458153e3a9cb"
+          curl -L -o LINUX.X64_193000_db_home.zip "https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip?AuthParam=1781526612_800c70da26c67ee83c90e230e12b0f71"
           echo "Downloaded file size:"
           ls -lh LINUX.X64_193000_db_home.zip
 
